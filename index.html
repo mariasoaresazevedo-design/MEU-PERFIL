@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha História | Maria 💜</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #10091d;
+    color: #fff;
+}
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #160d2b, #542c83, #9b70bd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+header h1 {
+    font-size: clamp(3rem, 9vw, 6rem);
+    color: #fff;
+    text-shadow: 0 0 25px #e4c7ff;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 15px 0 30px;
+    color: #f0ddff;
+}
+
+.botao {
+    padding: 13px 30px;
+    background: #fff;
+    color: #542c83;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.botao:hover {
+    background: #e6c8ff;
+    transform: scale(1.08);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #1b1030;
+    padding: 17px;
+    text-align: center;
+    box-shadow: 0 3px 15px #0005;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d7aaff;
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #d7aaff;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #211437;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #63438a;
+    box-shadow: 0 8px 25px #0004;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px #9b70bd44;
+}
+
+.card p {
+    line-height: 1.9;
+    color: #e8def3;
+}
+
+#sobre {
+    background: #160e25;
+}
+
+#gostos {
+    background: #211437;
+}
+
+#sonhos {
+    background: #160e25;
+}
+
+#viagens {
+    background: #211437;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.item {
+    background: #302047;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #78559c;
+}
+
+.item .emoji {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.item h3 {
+    color: #e3c5ff;
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #ddd0ed;
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+footer {
+    background: #0c0715;
+    text-align: center;
+    padding: 35px;
+    color: #c7a6e8;
+}
+
+.destaque {
+    color: #dfbaff;
+    font-weight: 600;
+}
+
+@media(max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <p>✨ UM POUQUINHO SOBRE MIM ✨</p>
+    <h1>Olá, eu sou a Maria!</h1>
+    <p>16 anos • Rosário do Ivaí - PR • Muitos sonhos para realizar 💜</p>
+    <a href="#sobre" class="botao">Conheça minha história</a>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#gostos">Meus gostos</a>
+    <a href="#viagens">Viagens</a>
+    <a href="#sonhos">Meus sonhos</a>
+</nav>
+
+<section id="sobre">
+    <h2 class="titulo">💜 Minha história</h2>
+
+    <div class="card">
+        <p>
+        Olá! Meu nome é <span class="destaque">Maria</span>,
+        tenho 16 anos e moro em Rosário do Ivaí, no Paraná.
+
+        Sou uma garota que gosta de aproveitar o tempo livre
+        fazendo aquilo que ama. Tenho vários interesses,
+        sonhos e objetivos que desejo conquistar ao longo
+        da minha vida.
+
+        Gosto de conhecer histórias diferentes, assistir
+        filmes, doramas, fanfics e jogar. Cada uma dessas
+        coisas faz parte da minha personalidade e deixa
+        meus dias mais divertidos.
+
+        Acredito que ainda tenho muitas experiências para
+        viver e muito para aprender. Minha história está
+        apenas começando!
+        </p>
+    </div>
+</section>
+
+<section id="gostos">
+    <h2 class="titulo">🎀 Coisas que eu amo</h2>
+
+    <div class="grid">
+
+        <div class="item">
+            <div class="emoji">🎬</div>
+            <h3>Filmes</h3>
+            <p>Adoro assistir filmes, principalmente Transformers!</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🌸</div>
+            <h3>Doramas</h3>
+            <p>Gosto de assistir doramas e conhecer histórias emocionantes.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">📖</div>
+            <h3>Fanfics</h3>
+            <p>Adoro ler e assistir fanfics e conhecer novos universos.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🏎️</div>
+            <h3>Jogos de corrida</h3>
+            <p>Gosto da emoção e da diversão dos jogos de corrida.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🎮</div>
+            <h3>Mobile Legends</h3>
+            <p>Um dos jogos que gosto de jogar no meu tempo livre.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">💜</div>
+            <h3>BTS</h3>
+            <p>Sou muito fã do BTS e sonho em assistir a um show deles!</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="viagens">
+    <h2 class="titulo">🌍 Lugares que quero conhecer</h2>
+
+    <div class="grid">
+
+        <div class="item">
+            <div class="emoji">🇰🇷</div>
+            <h3>Coreia do Sul</h3>
+            <p>Conhecer o país dos meus doramas favoritos e do BTS!</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🇪🇬</div>
+            <h3>Egito</h3>
+            <p>Conhecer as pirâmides e toda a história desse lugar incrível.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🇳🇴</div>
+            <h3>Noruega</h3>
+            <p>Ver as paisagens maravilhosas e, quem sabe, a aurora boreal.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">✈️</div>
+            <h3>Muitos outros países</h3>
+            <p>Quero viajar pelo mundo, conhecer culturas e viver aventuras.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="sonhos">
+    <h2 class="titulo">⭐ Meus sonhos para o futuro</h2>
+
+    <div class="grid">
+
+        <div class="item">
+            <div class="emoji">🍰</div>
+            <h3>Minha confeitaria</h3>
+            <p>Ter minha própria confeitaria e criar doces deliciosos.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🍽️</div>
+            <h3>Meu restaurante</h3>
+            <p>Construir meu próprio restaurante e ter meu negócio.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">💰</div>
+            <h3>Ser rica</h3>
+            <p>Conquistar minha independência financeira e ter uma vida confortável.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">👨‍👩‍👧</div>
+            <h3>Ajudar minha família</h3>
+            <p>Dar uma vida melhor para minha família e retribuir tudo que fizeram por mim.</p>
+        </div>
+
+        <div class="item">
+            <div class="emoji">🎤</div>
+            <h3>Show do BTS</h3>
+            <p>Realizar o sonho de ver meus ídolos pessoalmente!</p>
+        </div>
+
+    </div>
+
+    <div class="card" style="margin-top:30px; text-align:center;">
+        <h2 style="color:#dfbaff; margin-bottom:15px;">
+            Minha frase favorita 💜
+        </h2>
+
+        <p>
+        "Nunca deixe de sonhar, porque o futuro pode
+        guardar coisas muito maiores do que você imagina."
+        </p>
+    </div>
+</section>
+
+<footer>
+    <h3>Feito com 💜 por Maria</h3>
+    <p>Minha história está apenas começando...</p>
+    <p>© 2026 - Minha autobiografia</p>
+</footer>
+
+</body>
+</html>
